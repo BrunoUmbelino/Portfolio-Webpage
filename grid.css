@@ -1,0 +1,55 @@
+
+.container {
+    width: 100%;
+    min-height: 350px;
+    display: grid;    
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: minmax(350px, 1fr);
+    grid-template-rows: auto auto auto;
+}
+
+header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "welcome"
+    "projects"
+    "contact";
+    grid-template-columns: minmax(350px, 1fr);
+    grid-template-rows: minmax(100vh, auto) minmax(100vh, auto) minmax(100vh, auto);
+}
+
+footer {
+    grid-area: footer;
+}
+
+#welcome-section {
+    grid-area: welcome;
+}
+
+#projects {
+    grid-area: projects;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+.grid-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3em;
+    max-width: 1280px;
+    margin: auto;
+    margin-bottom: 5em;
+    margin-top: 5em;
+}
