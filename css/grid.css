@@ -9,6 +9,7 @@
     "footer";
     grid-template-columns: minmax(350px, 1fr);
     grid-template-rows: auto auto auto;
+    overflow-x: hidden;
 }
 
 header {
